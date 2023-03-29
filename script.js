@@ -3,13 +3,12 @@ const cactus = document.getElementById("cactus");
 const startBtn = document.querySelector(".startBtn");
 const stopBtn = document.querySelector(".stopBtn");
 
-console.log(startBtn)
-startBtn.addEventListener("click", ()=>{
-    cactus.classList.add("cactusMov");
+startBtn.addEventListener("click", () => {
+  cactus.classList.add("cactusMov");
 });
 stopBtn.addEventListener("click", () => {
-    cactus.classList.remove("cactusMov")
-})
+  cactus.classList.remove("cactusMov");
+});
 document.addEventListener("keydown", (e) => jump());
 
 const jump = () => {
@@ -31,4 +30,3 @@ const isAlive = setInterval(() => {
     alert("GAME OVER");
   }
 });
-
